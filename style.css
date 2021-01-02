@@ -12,27 +12,52 @@ button{
 header{
   position: sticky;
   top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 
   width:100%;
   padding: 30px;
   background: red;
   box-shadow: 0px 5px 30px black;
+
   font-family: sans-serif;
   font-size: 22px;
   font-weight: 800;
   text-align: center;
   color: white;
 }
-header > label> h1{
-  display: inline-block;
-}
-
 header > label >#input_box{
   width:60px;
   height: 30px;
+  font-size: 30px;
+
   margin-left:10px;
- 
+}
+
+#mainSection{
+  display:grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill,minmax(200px,auto));
+  grid-auto-rows: minmax(100px, auto);
+
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+#mainSection button{
   display: inline-block;
-  
+  background: hsla(180deg, 100%, 40%, 0.6);
+
+  border-radius: 10px;
+
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+#mainSection button:hover{
+  background-color: blue;
+}
+#mainSection button:active{
+  background-color: blueviolet;
+}
+#mainSection button .hide{
+  display: none;
 }
