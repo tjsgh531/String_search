@@ -5,11 +5,12 @@ text.addEventListener('keyup',searching);
 
 function searching(){
   buttons.forEach(element => {
-    if(text.value == null || text.value ==""){
+    if(!text.value || text.value ==""){
       element.classList.remove("hide");
+      return;
     }
-
-    if(element.dataset.ko.charAt(0) === text.value.charAt(0) || element.dataset.Eng.charAt(0) === text.value.charAt(0)){
+    console.log(text.dataset.Eng);
+    if(element.dataset.ko.charAt(0) === text.value.charAt(0) || element.dataset.eng.charAt(0) === text.value.toUpperCase().charAt(0)){
       element.classList.remove("hide");
     }
     else{
