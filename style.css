@@ -58,6 +58,6 @@ header > label >#input_box{
 #mainSection button:active{
   background-color: blueviolet;
 }
-#mainSection button .hide{
+#mainSection button.hide{
   display: none;
 }

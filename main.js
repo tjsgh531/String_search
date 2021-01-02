@@ -8,12 +8,12 @@ function searching(){
     if(text.value == null || text.value ==""){
       element.classList.remove("hide");
     }
+
+    if(element.dataset.ko.charAt(0) === text.value.charAt(0) || element.dataset.Eng.charAt(0) === text.value.charAt(0)){
+      element.classList.remove("hide");
+    }
     else{
       element.classList.add("hide");
-    }
-
-    if(element.dataset.ko.charAt(0) == text.value.charAt(0)){
-      element.classList.remove("hide");
     }
   });
 }
